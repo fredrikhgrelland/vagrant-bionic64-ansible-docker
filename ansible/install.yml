@@ -1,0 +1,18 @@
+---
+- hosts: all
+  become: yes
+  vars:
+    ansible:
+      galaxy:
+        roles:
+          - geerlingguy.docker
+    docker_users:
+      - vagrant
+  tasks:
+    - name: Install ansible galaxy roles
+      command: "ansible-galaxy install {{ item }} -p /etc/ansible/roles/"
+      loop: "{{ ansible.galaxy.roles }}"
+
+    - name: Install docker
+      include_role:
+        name: geerlingguy.docker
