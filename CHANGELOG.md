@@ -5,3 +5,4 @@
 ### Added
 
 - First version based on https://github.com/fredrikhgrelland/vagrant-hashistack
+- CI/CD
