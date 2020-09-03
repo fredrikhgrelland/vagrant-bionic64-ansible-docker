@@ -6,3 +6,8 @@ apt-get update
 DEBIAN_FRONTEND=noninteractive apt-get upgrade --no-install-recommends -q -y -u -o Dpkg::Options::="--force-confdef" --allow-downgrades --allow-remove-essential --allow-change-held-packages --allow-change-held-packages --allow-unauthenticated;
 apt-get install --no-install-recommends -y python3-distutils jq unzip && curl -k -s https://bootstrap.pypa.io/get-pip.py | sudo -H python3
 pip install 'ansible==2.9.11'
+
+#install java and set JAVA_HOME
+sudo apt-get install -y openjdk-11-jre openjdk-11-jdk
+echo "JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/" >> /etc/environment
+source /etc/environment

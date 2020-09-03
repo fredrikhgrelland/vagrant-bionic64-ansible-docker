@@ -14,3 +14,4 @@ Available on [vagrant cloud](https://app.vagrantup.com/fredrikhgrelland/boxes/bi
 - Ansible
 - minio
 - minio client (mc)
+- java
