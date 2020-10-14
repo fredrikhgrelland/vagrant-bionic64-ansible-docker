@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.1]
+
+### Changed
+
+- Nothing - running updates
+
 ## [0.2.0]
 
 ### Added
