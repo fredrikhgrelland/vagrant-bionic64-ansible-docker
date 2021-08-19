@@ -6,6 +6,7 @@
 
 - Ansible upgraded to latest stable release 2.10.7
 - Forcing package upgrades.
+- Logchanges
 
 ## [0.2.0]
 
