@@ -56,12 +56,12 @@ jobs:
 
       - name: Require PR label (major/minor/patch)
         id: bump
-        uses: zwaldowski/match-label-action@v1
+        uses: zwaldowski/match-label-action@v2
         with:
           allowed: major,minor,patch
 
       - id: next_version
-        uses: zwaldowski/semver-release-action@v1
+        uses: zwaldowski/semver-release-action@v2
         with:
           dry_run: true
           bump: ${{ steps.bump.outputs.match }}
@@ -69,7 +69,7 @@ jobs:
         
       - name: Get Changelog Entry
         id: changelog_reader
-        uses: mindsers/changelog-reader-action@v1.1.0
+        uses: mindsers/changelog-reader-action@v2.0.0
         with:
           version: ${{ steps.next_version.outputs.version }}
           path: CHANGELOG.md

@@ -4,8 +4,8 @@
 
 ### Changed
 
-- Ansible upgraded to latest stable release 2.11.3
-- Forcing package upgrades
+- Ansible upgraded to latest stable release 2.10.7
+- Forcing package upgrades.
 
 ## [0.2.0]
 
