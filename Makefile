@@ -6,7 +6,7 @@ build:
 
 test:
 ifeq (,$(wildcard ./packer/output-bionic64/package.box))
-	#$(MAKE) build
+	$(MAKE) build
 endif
 	vagrant up
 
