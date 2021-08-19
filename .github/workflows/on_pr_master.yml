@@ -45,7 +45,7 @@ jobs:
       bump: ${{ steps.bump.outputs.match }}
       next_version: ${{ steps.next_version.outputs.version }}
       current_version: ${{ fromJson(steps.current_version.outputs.output).data.current_version.version }}
-      log_entry: ${{ steps.changelog_reader.outputs.log_entry }}
+      log_entry: ${{ steps.changelog_reader.outputs.changes }}
     steps:
       - uses: actions/checkout@v2
       - id: current_version
